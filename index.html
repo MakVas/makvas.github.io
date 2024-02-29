@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang = "ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна 2</title>
+    <!-- Посилання на CSS, іконки та інші елементи -->
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"> 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> 
+</head>
+<body>
+    <!-- Навігація -->
+    <header>
+        <!-- Логотип -->
+        <a href="index.html" class="logo"><i class='bx bx-football'></i>Football Stats</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <!-- Навігація між вкладками-->
+        <ul class="navbar">
+            <li><a href="#home" class="home-active">Home</a></li>
+            <li><a href="#matches">Matchday</a></li>
+            <li><a href="#teams">Teams</a></li>
+            <li><a href="#players">Top scorers</a></li>
+            <li><a href="#about">Daily video</a></li>
+        </ul>
+        <!-- Профіль -->
+        <div class="profile">
+            <img src="img/profile.jpg" alt="">
+            <span>Makovii Andrii</span>
+            <i class='bx bx-caret-down'></i>
+        </div>
+    </header>
+    <!-- Домашня сторінка -->
+    <section class="home swiper" id="home">
+        <div class="swiper-wrapper">
+            <!-- Cлайд1 -->
+            <div class="swiper-slide container slide1">
+                <div class="home-text">
+                    <span class="uclText">Champions league</span>
+                    <h1>Follow the<br>Champions League<br>matches</h1>
+                    <a href="champions_league.html" class="btn btn1">Watch<i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+                <img src="img/champions_league.png" alt="">
+            </div>
+            <!-- Cлайд2 -->
+            <div class="swiper-slide container slide2">
+                <div class="home-text">
+                    <span class="uelText">Europa League</span>
+                    <h1>Follow the<br>Europa League<br>matches</h1>
+                    <a href="europa_league.html" class="btn btn2">Watch<i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+                <img src="img/europa_league.png" alt="">
+            </div>
+            <!-- Cлайд3 -->
+            <div class="swiper-slide container slide3">
+                <div class="home-text">
+                    <span class="ueclText">Conferense League</span>
+                    <h1>Follow the<br>Conference League<br>matches</h1>
+                    <a href="conference_league.html" class="btn btn3">Watch<i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+                <img src="img/conference_league.png" alt="">
+            </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+    </section>
+    <!-- Сторінка "Матчі" -->
+    <section class="matches" id="matches">
+        <div class="heading">
+            <h1>Matchday<br><span>Results</h1>
+                <a href="#" class="btn">All matches<i class='bx bx-right-arrow-alt'></i></a>
+        </div>
+        <!-- Контент -->
+        <div class="matches-container">
+            <!-- Бокс1  -->
+            <div class="box matchbox">
+                <img src="img/team1.png" alt="">
+                <h2>Шахтар</h2>
+                <span>Донецьк</span>
+                <i class='bx bx-right-arrow-alt'></i>
+            </div>
+            <!-- Бокс2  -->
+            <div class="box matchbox">
+                <img src="img/team2.png" alt="">
+                <h2>Барселона</h2>
+                <span></span>
+                <i class='bx bx-right-arrow-alt'></i>
+            </div>
+            <!-- Бокс3  -->
+            <div class="box matchbox">
+                <img src="img/team3.png" alt="">
+                <h2>Баварія</h2>
+                <span>Мюнхен</span>
+                <i class='bx bx-right-arrow-alt'></i>
+            </div>
+            <!-- Бокс4  -->
+            <div class="box matchbox">
+                <img src="img/team4.png" alt="">
+                <h2>Рома</h2>
+                <span></span>
+                <i class='bx bx-right-arrow-alt'></i>
+            </div>
+            <!-- Бокс5  -->
+            <div class="box matchbox">
+                <img src="img/team5.png" alt="">
+                <h2>Арсенал</h2>
+                <span>Лондон</span>
+                <i class='bx bx-right-arrow-alt'></i>
+            </div>
+        </div>
+    </section>
+    <!-- "Команди" -->
+    <section class="teams" id="teams">
+        <div class="heading">
+            <h1>Popular<br><span>Teams</h1>
+                <a href="#" class="btn">All clubs<i class='bx bx-right-arrow-alt'></i></a>
+        </div>
+        <!-- Контент -->
+        <div class="teams-container">
+            <!-- Бокс1  -->
+            <div class="box teambox1">
+                <img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/140x140/52707.png" alt="FC Shakhtar Donetsk">
+                <h2>Shakhtar Donetsk</h2>
+                <span><img class="countryImg" src="https://img.uefa.com/imgml/flags/25x25/UKR.png" alt="UKR">UKR</span>
+                <i class='bx bx-right-arrow-alt'></i>
+            </div>
+            <!-- Бокс2  -->
+            <div class="box teambox2">
+                <img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/140x140/52919.png" alt="Manchester City">
+                <h2>Manchester City</h2>
+                <span><img class="countryImg" src="https://img.uefa.com/imgml/flags/25x25/ENG.png" alt="ENG">ENG</span>
+                <i class='bx bx-right-arrow-alt'></i>
+            </div>
+            <!-- Бокс3  -->
+            <div class="box teambox3">
+                <img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/140x140/50037.png" alt="FC Bayern München">
+                <h2>Bayern</h2>
+                <span><img class="countryImg" src="https://img.uefa.com/imgml/flags/25x25/GER.png" alt="GER">GER</span>
+                <i class='bx bx-right-arrow-alt'></i>
+            </div>
+            <!-- Бокс4  -->
+            <div class="box teambox4">
+                <img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/140x140/52747.png" alt="Paris Saint-Germain">
+                <h2>Paris</h2>
+                <span><img class="countryImg" src="https://img.uefa.com/imgml/flags/25x25/FRA.png" alt="FRA">FRA</span>
+                <i class='bx bx-right-arrow-alt'></i>
+            </div>
+            <!-- Бокс5  -->
+            <div class="box teambox5">
+                <img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/140x140/52280.png" alt="Arsenal FC">
+                <h2>Arsenal</h2>
+                <span><img class="countryImg" src="https://img.uefa.com/imgml/flags/25x25/ENG.png" alt="ENG">ENG</span>
+                <i class='bx bx-right-arrow-alt'></i>
+            </div>
+        </div>
+    </section>
+    <!-- "Гравці" -->
+    <section class="players" id="players">
+        <div class="heading">
+            <h1>Top scorers<br><span>In all Tournaments</h1>
+        </div>
+        <!-- Контент -->
+        <table class="players-container">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th>Matches<br>played</th>
+                    <th>Goals</th>
+                    <th>Assists</th>
+                    <th>Tournament</th>
+                </tr>
+            </thead>
+                <tbody>
+                <tr class="box">
+                    <td>1</td>
+                    <td><img class="playerImg" src="https://img.uefa.com/imgml/TP/players/14/2024/324x324/250011037.jpg" alt=""></td>
+                    <td><h2>Aubameyang</h2><br><span>Marseille - Forward</span></td>
+                    <td>7</td>
+                    <td>1</td>
+                    <td>7</td>
+                    <td><img class="tournamentImg" src="img/europa_league_dark.png"alt=""></td>
+                </tr>
+                <tr class="box">
+                    <td>2</td>
+                    <td><img class="playerImg" src="https://img.uefa.com/imgml/TP/players/14/2024/324x324/250010802.jpg" alt=""></td>
+                    <td><h2>Lukaku</h2><br><span>Roma - Forward</span></td>
+                    <td>8</td>
+                    <td>1</td>
+                    <td>6</td>
+                    <td><img class="tournamentImg" src="img/europa_league_dark.png"alt=""></td>
+                </tr>
+                <tr class="box">
+                    <td>3</td>
+                    <td><img class="playerImg"src="https://img.uefa.com/imgml/TP/players/14/2024/324x324/250188541.jpg"alt=""></td>
+                    <td><h2>João Pedro</h2><br><span>Brighton - Forward</span></td>
+                    <td>6</td>
+                    <td>0</td>
+                    <td>6</td>
+                    <td><img class="tournamentImg" src="img/europa_league_dark.png"alt=""></td>
+                </tr>
+                <tr class="box">
+                    <td>4</td>
+                    <td><img class="playerImg" src="https://img.uefa.com/imgml/TP/players/1/2024/324x324/250019498.jpg" alt=""></td>
+                    <td><h2>Griezmann</h2><br><span>Atlético de Madrid - Forward</span></td>
+                    <td>7</td>
+                    <td>5</td>
+                    <td>0</td>
+                    <td><img class="tournamentImg" src="img/champions_league_dark.png"alt=""></td>
+                </tr>
+                <tr class="box">
+                    <td>5</td>
+                    <td><img class="playerImg" src="https://img.uefa.com/imgml/TP/players/2019/2024/324x324/250182397.jpg" alt=""></td>
+                    <td><h2>Zahavi</h2><br><span>Maccabi Tel Aviv - Forward</span></td>
+                    <td>6</td>
+                    <td>5</td>
+                    <td>1</td>
+                    <td><img class="tournamentImg" src="img/conference_league_dark.png"alt=""></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <!-- "Відео дня" -->
+    <section class="about" id="about">
+        <iframe width=100% src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=lmOtZbGAlHP6PY0A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="about-text">
+            <span>Daily video</span>
+            <p>Great Goals Round of 16 1st leg | Lewandowski, Foden, Brahim...</p>
+            <p>Watch the best goals from UEFA Champions League Round of 16 1st leg's fixtures featuring strikes from Robert Lewandowski, Phil Foden and Brahim Díaz. Which one was your favourite?</p>
+            <a href="https://www.youtube.com/watch?v=tQiBh1qvdzA" class="btn">Watch<i class='bx bx-right-arrow-alt'></i></a>
+        </div>
+    </section>
+    <!-- "Нижня частина" -->
+    <section class="footer" id="footer">
+        <div class="footer-box">
+            <a href="#" class="logo"><i class='bx bx-football'></i>Football Stats</a>
+            <p>Follow us<br>on social networks</p>
+            <div class="social">
+                <a href="https://t.me/makoviyandriy"><i class='bx bxl-telegram'></i></a>
+                <a href="https://www.instagram.com/makoviyandriy/"><i class='bx bxl-instagram'></i></a>
+                <a href="https://github.com/MakVas"><i class='bx bxl-github'></i></a>
+            </div>
+        </div>
+        <div class="footer-box">
+            <h2>IDK</h2>
+            <a href="#">Fruits & Vegeables</a>
+            <a href="#">Dairy Products</a>
+            <a href="#">Package Food</a>
+        </div>
+        <div class="footer-box">
+            <h2>Tournaments</h2>
+            <a href="champions_league.html">Champions League</a>
+            <a href="europa_league.html">Europa League</a>
+            <a href="conference_league.html">Conference League</a>
+        </div>
+        <div class="footer-box">
+            <h2>Notifications</h2>
+            <p>Receive match notifications<br>to your email</p>
+            <form action="">
+                <i class='bx bxs-envelope'></i>
+                <input type="email" name="" id="" placeholder="Enter your email">
+                <i class='bx bx-arrow-back bx-rotate-180'></i>
+            </form>
+        </div>
+    </section>
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>&#169; Виконав: 5ПІ-22б Маковій Андрій</p>
+    </div>
+
+    <!-- Свайпер JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Посилання на JS -->
+    <script src="main.js"></script>
+</body>
+</html>
