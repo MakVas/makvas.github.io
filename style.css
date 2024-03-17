@@ -58,27 +58,10 @@ header.uel{
 header.uecl{
     background-color: var(--uecl-primary-color);
 }
-.profile{
-    display: flex;
-    align-items: center;
-    column-gap: 0.5rem;
-    cursor: pointer;
-}
-.profile img{
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 50%;
-}
 .profile.ucl img{
     width: auto;
     height: 40px;
     border-radius: 0;
-}
-.profile span{
-    font-size: 13px;
-    font-weight: 500;
 }
 .logo{
     display: flex;
@@ -282,59 +265,66 @@ header.uecl{
     color: var(--green-color);
 }
 .matchbox{
-    background: #fef4ea;
+    transition: transform 0.3s ease;
+}
+.matchbox.ucl{
+    border: 5px solid var(--ucl-secondary-color);
+    background: var(--ucl-third-color);
+}
+.matchbox.uel{
+    border: 5px solid var(--uel-secondary-color);
+    background: var(--uel-primary-color);
+}
+.matchbox.uecl{
+    border: 5px solid var(--uecl-secondary-color);
+    background: var(--uecl-primary-color);
+}
+.matchbox:hover {
+    transform: scale(1.05);
 }
 .matches{
     max-width: 968px;
     margin-left: auto;
     margin-right: auto;
 }
-.matches-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
-    gap: 1rem;
+.swiper-slide.match{
     margin-top: 2rem;
-}
-.matches-container .box{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    border-radius: 0.5rem;
-}
-.matches-container .box img{
-    width: 100%;
-    height: 100px;
-    object-fit: contain;
-    object-position: center;
-}
-.matches-container .box h2{
-    font-size: 1rem;
-    font-weight: 600;
-}
-.matches-container .box span{
-    font-size: 0.8rem;
-    font-weight: 400;
     margin-bottom: 1rem;
 }
-.matches-container .box .bx{
-    padding: 10px;
-    background: var(--green-color);
-    color: var(--bg-color);
-    border-radius: 5rem;
-    margin-top: 2rem;
-    position: absolute;
-    bottom: -8%;
-    display: none;
+.swiper-slide.match .box{
+    width: 200px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 15px;
+    border-radius: 0.5rem;
 }
-.matches-container .box .bx:hover{
-    background: var(--light-orange-color);
-    transition: 0.2s all linear;
+.swiper-slide.match .box .teamImg{
+    width: auto;
+    height: 20px;
+    margin-right: 5px;
 }
-.matches-container .box:hover .bx{
-    display: block;
-    transition: 0.2s all linear;
+.swiper-slide.match .box h2{
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.swiper-slide.match .matchbox.ucl h2{
+    color: var(--ucl-secondary-color);
+}
+.swiper-slide.match .matchbox.uel h2{
+    color: var(--uel-secondary-color);
+}
+.swiper-slide.match .matchbox.uecl h2{
+    color: var(--uecl-secondary-color);
+}
+.swiper-slide.match .box span{
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
 }
 .teams{
     max-width: 968px;
@@ -345,7 +335,7 @@ header.uecl{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, auto));
     gap: 1rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 .teams-container .box{
     position: relative;
@@ -373,27 +363,8 @@ header.uecl{
 .teams-container .box span{
     font-size: 0.7rem;
     font-weight: 400;
-    margin-bottom: 1rem;
     display: flex;
     align-items: center;
-}
-.teams-container .box .bx{
-    padding: 10px;
-    background: var(--green-color);
-    color: var(--bg-color);
-    border-radius: 5rem;
-    margin-top: 2rem;
-    position: absolute;
-    bottom: -8%;
-    display: none;
-}
-.teams-container .box .bx:hover{
-    background: var(--light-orange-color);
-    transition: 0.2s all linear;
-}
-.teams-container .box:hover .bx{
-    display: block;
-    transition: 0.2s all linear;
 }
 .teambox1{
     background: #fef4ea;
@@ -421,10 +392,13 @@ header.uecl{
     width: 100%;
     max-width: 968px;
 }
+.players-container td {
+    text-align: center;
+}
 .players-container tr.box{
     padding-top: 1rem;
     display: table-row;
-    box-shadow: 1px 2px 11px 4px rgb(14 55 54 / 15%);
+    box-shadow: 1px 2px 3px 2px rgb(14 55 54 / 15%);
     border-radius: 0.5rem;
 }
 .players-container tr.box td{
@@ -434,24 +408,24 @@ header.uecl{
 }
 .players-container tr.box td .playerImg{
     width: auto;
-    height: 100px;
+    height: 80px;
     object-fit: contain;
     border-radius: 50%;
 }
 .players-container tr.box td .tournamentImg{
     width: auto;
-    height: 100px;
+    height: 80px;
 }
 .players-container tr.box td:first-child{
     font-size: 1.1rem;
     font-weight: 600;
 }
-.players-container tr.box td .h2{
-    font-size: 1.1rem;
+.players-container tr.box td h2{
+    font-size: 1.3rem;
     font-weight: 600;
 }
-.players-container tr.box td .span{
-    font-size: 1.1rem;
+.players-container tr.box td span{
+    font-size: 1rem;
     font-weight: 400;
 }
 .about{
@@ -606,6 +580,27 @@ header.uecl{
     #menu-icon{
         display:initial;
     }
+    .players-container tr.box td{
+        padding: 0.5rem;
+    }
+    .players-container tr.box td .playerImg{
+        height: 50px;
+    }
+    .players-container tr.box td .tournamentImg{
+        height: 50px;
+    }
+    .players-container th{
+        font-size: 0.8rem;
+    }
+    .players-container tr.box td:first-child{
+        font-size: 0.8rem;
+    }
+    .players-container tr.box td h2{
+        font-size: 0.8rem;
+    }
+    .players-container tr.box td span{
+        font-size: 0.8rem;
+    }
     .navbar{
         position: absolute;
         top: -570px;
@@ -694,6 +689,15 @@ header.uecl{
     }
     .teams-container{
         gap: 1.5rem;
+    }
+    .players-container th:last-child{
+        font-size: 0rem;
+    }
+    .players-container tr.box td .playerImg{
+        height: 0px;
+    }
+    .players-container tr.box td .tournamentImg{
+        height: 0px;
     }
 }
 @media (max-width:380px){

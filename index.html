@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html lang = "ua">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Лабораторна 2</title>
     <!-- Посилання на CSS, іконки та інші елементи -->
     <link rel="stylesheet" href="style.css"> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"> 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
     <!-- Навігація -->
@@ -25,11 +23,7 @@
             <li><a href="#players">Top scorers</a></li>
             <li><a href="#about">Daily video</a></li>
         </ul>
-        <!-- Профіль -->
         <div class="profile">
-            <img src="img/profile.jpg" alt="">
-            <span>Makovii Andrii</span>
-            <i class='bx bx-caret-down'></i>
         </div>
     </header>
     <!-- Домашня сторінка -->
@@ -70,45 +64,62 @@
     <!-- Сторінка "Матчі" -->
     <section class="matches" id="matches">
         <div class="heading">
-            <h1>Matchday<br><span>Results</h1>
+            <h1>Matchday<br><span>Fixtures</h1>
                 <a href="#" class="btn">All matches<i class='bx bx-right-arrow-alt'></i></a>
         </div>
         <!-- Контент -->
-        <div class="matches-container">
-            <!-- Бокс1  -->
-            <div class="box matchbox">
-                <img src="img/team1.png" alt="">
-                <h2>Шахтар</h2>
-                <span>Донецьк</span>
-                <i class='bx bx-right-arrow-alt'></i>
-            </div>
-            <!-- Бокс2  -->
-            <div class="box matchbox">
-                <img src="img/team2.png" alt="">
-                <h2>Барселона</h2>
-                <span></span>
-                <i class='bx bx-right-arrow-alt'></i>
-            </div>
-            <!-- Бокс3  -->
-            <div class="box matchbox">
-                <img src="img/team3.png" alt="">
-                <h2>Баварія</h2>
-                <span>Мюнхен</span>
-                <i class='bx bx-right-arrow-alt'></i>
-            </div>
-            <!-- Бокс4  -->
-            <div class="box matchbox">
-                <img src="img/team4.png" alt="">
-                <h2>Рома</h2>
-                <span></span>
-                <i class='bx bx-right-arrow-alt'></i>
-            </div>
-            <!-- Бокс5  -->
-            <div class="box matchbox">
-                <img src="img/team5.png" alt="">
-                <h2>Арсенал</h2>
-                <span>Лондон</span>
-                <i class='bx bx-right-arrow-alt'></i>
+        <div class="swiper matches">
+            <div class="swiper-wrapper">
+                <!-- Бокс1  -->
+                <div class="swiper-slide match">
+                    <a href="your-link-here">
+                        <div class="box matchbox ucl">
+                            <h2>9 Apr, 22:00</h2>
+                            <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/50051.png" alt="Real Madrid CF">Real Madrid</span>
+                            <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/52919.png" alt="Manchester City">Man City</span>
+                        </div>
+                    </a>
+                </div>
+                <!-- Бокс2  -->
+                <div class="swiper-slide match">
+                    <a href="your-link-here">
+                        <div class="box matchbox ucl">
+                            <h2>9 Apr, 22:00</h2>
+                            <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/52280.png" alt="Arsenal FC">Arsenal</span>
+                            <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/50037.png" alt="FC Bayern München">Bayern</span>
+                        </div>
+                    </a>
+                </div>
+                <!-- Бокс3  -->
+                <div class="swiper-slide match">
+                    <a href="your-link-here">
+                        <div class="box matchbox ucl">
+                            <h2>10 Apr, 22:00</h2>
+                            <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/52747.png" alt="Paris Saint-Germain">Paris</span>
+                            <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/50080.png" alt="FC Barcelona">Barcelona</span>
+                        </div>
+                    </a>
+                </div>
+                <!-- Бокс4  -->
+                <div class="swiper-slide match">
+                    <a href="your-link-here">
+                        <div class="box matchbox uel">
+                            <h2>11 Apr, 22:00</h2>
+                            <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/50058.png" alt="AFC Milan">Milan</span>
+                            <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/50137.png" alt="Roma FC">Roma</span>
+                        </div>
+                    </a>
+                </div>
+                <!-- Бокс5  -->
+                <div class="swiper-slide match">
+                    <a href="your-link-here">
+                        <div class="box matchbox uecl">
+                            <h2>11 Apr, 22:00</h2>
+                            <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/52683.png" alt="Aston Villa">Aston Villa</span>
+                            <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/75797.png" alt="Lille">Lille</span>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -125,35 +136,30 @@
                 <img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/140x140/52707.png" alt="FC Shakhtar Donetsk">
                 <h2>Shakhtar Donetsk</h2>
                 <span><img class="countryImg" src="https://img.uefa.com/imgml/flags/25x25/UKR.png" alt="UKR">UKR</span>
-                <i class='bx bx-right-arrow-alt'></i>
             </div>
             <!-- Бокс2  -->
             <div class="box teambox2">
                 <img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/140x140/52919.png" alt="Manchester City">
                 <h2>Manchester City</h2>
                 <span><img class="countryImg" src="https://img.uefa.com/imgml/flags/25x25/ENG.png" alt="ENG">ENG</span>
-                <i class='bx bx-right-arrow-alt'></i>
             </div>
             <!-- Бокс3  -->
             <div class="box teambox3">
                 <img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/140x140/50037.png" alt="FC Bayern München">
                 <h2>Bayern</h2>
                 <span><img class="countryImg" src="https://img.uefa.com/imgml/flags/25x25/GER.png" alt="GER">GER</span>
-                <i class='bx bx-right-arrow-alt'></i>
             </div>
             <!-- Бокс4  -->
             <div class="box teambox4">
                 <img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/140x140/52747.png" alt="Paris Saint-Germain">
                 <h2>Paris</h2>
                 <span><img class="countryImg" src="https://img.uefa.com/imgml/flags/25x25/FRA.png" alt="FRA">FRA</span>
-                <i class='bx bx-right-arrow-alt'></i>
             </div>
             <!-- Бокс5  -->
             <div class="box teambox5">
                 <img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/140x140/52280.png" alt="Arsenal FC">
                 <h2>Arsenal</h2>
                 <span><img class="countryImg" src="https://img.uefa.com/imgml/flags/25x25/ENG.png" alt="ENG">ENG</span>
-                <i class='bx bx-right-arrow-alt'></i>
             </div>
         </div>
     </section>
@@ -169,64 +175,79 @@
                     <th></th>
                     <th></th>
                     <th></th>
-                    <th>Matches<br>played</th>
-                    <th>Goals</th>
-                    <th>Assists</th>
-                    <th>Tournament</th>
+                    <th>Matches played</th>
+                    <th>&nbsp;Goals&nbsp;</th>
+                    <th>&nbsp;Assists&nbsp;</th>
+                    <th>&nbsp;Tournament</th>
                 </tr>
             </thead>
                 <tbody>
-                <tr class="box">
+                <tr class="box uel">
                     <td>1</td>
                     <td><img class="playerImg" src="https://img.uefa.com/imgml/TP/players/14/2024/324x324/250011037.jpg" alt=""></td>
-                    <td><h2>Aubameyang</h2><br><span>Marseille - Forward</span></td>
-                    <td>7</td>
-                    <td>1</td>
-                    <td>7</td>
+                    <td>
+                        <h2>Aubameyang</h2>
+                        <span>Marseille - Forward</span>
+                    </td>
+                    <td><span>9</span></td>
+                    <td><span>9</span></td>
+                    <td><span>2</span></td>
                     <td><img class="tournamentImg" src="img/europa_league_dark.png"alt=""></td>
                 </tr>
-                <tr class="box">
+                <tr class="box uecl">
                     <td>2</td>
-                    <td><img class="playerImg" src="https://img.uefa.com/imgml/TP/players/14/2024/324x324/250010802.jpg" alt=""></td>
-                    <td><h2>Lukaku</h2><br><span>Roma - Forward</span></td>
-                    <td>8</td>
-                    <td>1</td>
-                    <td>6</td>
-                    <td><img class="tournamentImg" src="img/europa_league_dark.png"alt=""></td>
-                </tr>
-                <tr class="box">
-                    <td>3</td>
-                    <td><img class="playerImg"src="https://img.uefa.com/imgml/TP/players/14/2024/324x324/250188541.jpg"alt=""></td>
-                    <td><h2>João Pedro</h2><br><span>Brighton - Forward</span></td>
-                    <td>6</td>
-                    <td>0</td>
-                    <td>6</td>
-                    <td><img class="tournamentImg" src="img/europa_league_dark.png"alt=""></td>
-                </tr>
-                <tr class="box">
-                    <td>4</td>
-                    <td><img class="playerImg" src="https://img.uefa.com/imgml/TP/players/1/2024/324x324/250019498.jpg" alt=""></td>
-                    <td><h2>Griezmann</h2><br><span>Atlético de Madrid - Forward</span></td>
-                    <td>7</td>
-                    <td>5</td>
-                    <td>0</td>
-                    <td><img class="tournamentImg" src="img/champions_league_dark.png"alt=""></td>
-                </tr>
-                <tr class="box">
-                    <td>5</td>
                     <td><img class="playerImg" src="https://img.uefa.com/imgml/TP/players/2019/2024/324x324/250182397.jpg" alt=""></td>
-                    <td><h2>Zahavi</h2><br><span>Maccabi Tel Aviv - Forward</span></td>
-                    <td>6</td>
-                    <td>5</td>
-                    <td>1</td>
+                    <td>
+                        <h2>Zahavi</h2>
+                        <span>Maccabi Tel Aviv - Forward</span>
+                    </td>
+                    <td><span>8</span></td>
+                    <td><span>8</span></td>
+                    <td><span>1</span></td>
                     <td><img class="tournamentImg" src="img/conference_league_dark.png"alt=""></td>
+                </tr>
+                <tr class="box uel">
+                    <td>3</td>
+                    <td><img class="playerImg" src="https://img.uefa.com/imgml/TP/players/14/2024/324x324/250010802.jpg" alt=""></td>
+                    <td>
+                        <h2>Lukaku</h2>
+                        <span>Roma - Forward</span>
+                    </td>
+                    <td><span>9</span></td>
+                    <td><span>7</span></td>
+                    <td><span>1</span></td>
+                    <td><img class="tournamentImg" src="img/europa_league_dark.png"alt=""></td>
+                </tr>
+                <tr class="box uel">
+                    <td>4</td>
+                    <td><img class="playerImg"src="https://img.uefa.com/imgml/TP/players/14/2024/324x324/250188541.jpg"alt=""></td>
+                    <td>
+                        <h2>João Pedro</h2>
+                        <span>Brighton - Forward</span>
+                    </td>
+                    <td><span>6</span></td>
+                    <td><span>6</span></td>
+                    <td><span>0</span></td>
+                    <td><img class="tournamentImg" src="img/europa_league_dark.png"alt=""></td>
+                </tr>
+                <tr class="box ucl">
+                    <td>5</td>
+                    <td><img class="playerImg" src="https://img.uefa.com/imgml/TP/players/1/2024/324x324/250019498.jpg" alt=""></td>
+                    <td>
+                        <h2>Griezmann</h2>
+                        <span>Atlético de Madrid - Forward</span>
+                    </td>
+                    <td><span>8</span></td>
+                    <td><span>6</span></td>
+                    <td><span>0</span></td>
+                    <td><img class="tournamentImg" src="img/champions_league_dark.png"alt=""></td>
                 </tr>
             </tbody>
         </table>
     </section>
     <!-- "Відео дня" -->
     <section class="about" id="about">
-        <iframe width=100% src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=lmOtZbGAlHP6PY0A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width=100% src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=lmOtZbGAlHP6PY0A" allowfullscreen></iframe>
         <div class="about-text">
             <span>Daily video</span>
             <p>Great Goals Round of 16 1st leg | Lewandowski, Foden, Brahim...</p>
@@ -246,10 +267,10 @@
             </div>
         </div>
         <div class="footer-box">
-            <h2>IDK</h2>
-            <a href="#">Fruits & Vegeables</a>
-            <a href="#">Dairy Products</a>
-            <a href="#">Package Food</a>
+            <h2>Navigation</h2>
+            <a href="#">Home</a>
+            <a href="#">All matches</a>
+            <a href="#">All clubs</a>
         </div>
         <div class="footer-box">
             <h2>Tournaments</h2>
@@ -269,10 +290,11 @@
     </section>
     <!-- Copyright -->
     <div class="copyright">
-        <p>&#169; Виконав: 5ПІ-22б Маковій Андрій</p>
+        <p>&#169; Makovii Andrii</p>
     </div>
 
     <!-- Свайпер JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- Посилання на JS -->
     <script src="main.js"></script>

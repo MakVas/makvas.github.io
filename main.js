@@ -1,6 +1,6 @@
 // Свайпер
 var swiper = new Swiper(".home", {
-    spaceBetween: 30,
+    spaceBetween: 0,
     centeredSlides: true,
     autoplay: {
       delay: 2500,
@@ -15,7 +15,34 @@ var swiper = new Swiper(".home", {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-  });
+});
+
+var swiper = new Swiper(".swiper.matches", {
+  slidesPerView: 4.5,
+  breakpoints: {
+    1080: {
+      slidesPerView: 4.5,
+    },
+    991: {
+      slidesPerView: 4,
+    },
+    852: {
+      slidesPerView: 3.5,
+    },
+    712: {
+      slidesPerView: 3,
+    },
+    600: {
+      slidesPerView: 2.5,
+    },
+    500: {
+      slidesPerView: 2,
+    },
+    380: {
+      slidesPerView: 1.8,
+    },
+  }
+});
 
 let menu = document.querySelector('#menu-icon')
 let navbar = document.querySelector('.navbar')
