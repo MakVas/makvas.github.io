@@ -195,6 +195,39 @@ header.uecl{
     background: var(--light-orange-color);
     transition: 0.2s ease;
 }
+.btn.ucl{
+    background: var(--ucl-third-color);
+    color: var(--bg-color);
+}
+.btn.ucl .bx{
+    background-color: var(--bg-color);
+    color: var(--ucl-third-color);
+}
+.btn.ucl:hover{
+    background: var(--ucl-primary-color);
+}
+.btn.uel{
+    background: var(--uel-primary-color);
+    color: var(--bg-color);
+}
+.btn.uel .bx{
+    background-color: var(--bg-color);
+    color: var(--uel-primary-color);
+}
+.btn.uel:hover{
+    background: var(--uel-secondary-color);
+}
+.btn.uecl{
+    background: var(--uel-primary-color);
+    color: var(--bg-color);
+}
+.btn.uecl .bx{
+    background-color: var(--bg-color);
+    color: var(--uecl-primary-color);
+}
+.btn.uecl:hover{
+    background: var(--uecl-secondary-color);
+}
 .btn1{
     background: var(--ucl-secondary-color);
     color: var(--ucl-primary-color);
@@ -287,12 +320,23 @@ header.uecl{
 .heading span{
     color: var(--green-color);
 }
+.heading.ucl span{
+    color: var(--ucl-primary-color);
+}
+.heading.uel span{
+    color: var(--uel-secondary-color);
+}
+.heading.uecl span{
+    color: var(--uecl-secondary-color);
+}
 .matches{
     max-width: 968px;
     margin-left: auto;
     margin-right: auto;
 }
-.matches.ucl{
+.matches.ucl,
+.matches.uel,
+.matches.uecl{
     margin-top: 2rem
 }
 .matches-wrapper{
@@ -313,7 +357,8 @@ header.uecl{
     padding: 15px;
     border-radius: 0.5rem;
     margin-top: 3px;
-    margin-right: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
     transition: transform 0.3s ease;
 }
 .matchbox.ucl{
@@ -472,7 +517,9 @@ header.uecl{
     font-size: 1rem;
     font-weight: 400;
 }
-.players-container.all th, .players-container.all td h2, .players-container.all td:first-child{
+.players-container.all th,
+.players-container.all td h2,
+.players-container.all td:first-child{
     color: var(--text-color);
 }
 .players-container.all td span{
@@ -481,19 +528,25 @@ header.uecl{
 .players-container.ucl td h2{
     color: var(--ucl-secondary-color);
 }
-.players-container.ucl th, .players-container.ucl td:first-child, .players-container.ucl td span{
+.players-container.ucl th,
+.players-container.ucl td:first-child,
+.players-container.ucl td span{
     color: var(--bg-color);
 }
 .players-container.uel td h2{
     color: var(--uel-secondary-color);
 }
-.players-container.uel th, .players-container.uel td:first-child, .players-container.uel td span{
+.players-container.uel th,
+.players-container.uel td:first-child,
+.players-container.uel td span{
     color: var(--bg-color);
 }
 .players-container.uecl td h2{
     color: var(--uecl-secondary-color);
 }
-.players-container.uecl th, .players-container.uecl td:first-child, .players-container.uecl td span{
+.players-container.uecl th,
+.players-container.uecl td:first-child,
+.players-container.uecl td span{
     color: var(--bg-color);
 }
 .about{
@@ -519,6 +572,15 @@ header.uecl{
 }
 .about-text p{
     margin: 0.5rem 0 1rem;
+}
+.about-text.ucl span{
+    color: var(--ucl-primary-color);
+}
+.about-text.uel span{
+    color: var(--uel-secondary-color);
+}
+.about-text.uecl span{
+    color: var(--uecl-secondary-color);
 }
 .review-profile{
     display: flex;
@@ -558,6 +620,78 @@ header.uecl{
 }
 .footer.uecl{
     background-image: url("https://img.uefa.com/imgml/uefacom/uecl/fallback.jpg");
+}
+.footer.ucl .social .bx{
+    background: var(--ucl-secondary-color);
+    color: var(--ucl-third-color);
+}
+.footer.ucl .social .bx:hover{
+    background: var(--ucl-third-color);
+    color: var(--ucl-secondary-color);
+}
+.footer.ucl a,
+.footer.ucl p,
+.footer.ucl input[type="email"],
+.footer.ucl input[type="email"]::placeholder{
+    color: var(--bg-color);
+}
+.footer.ucl a:hover,
+.footer.ucl form .bx,
+.footer.ucl form .bxs-envelope,
+.footer.ucl h2,
+.footer.ucl .bx{
+    color: var(--ucl-secondary-color);
+}
+.footer.ucl form{
+    border-bottom: 1px solid var(--ucl-secondary-color);
+}
+.footer.uel .social .bx{
+    background: var(--uel-secondary-color);
+    color: var(--uecl-primary-color);
+}
+.footer.uel .social .bx:hover{
+    background: var(--uel-primary-color);
+    color: var(--uel-secondary-color);
+}
+.footer.uel a,
+.footer.uel p,
+.footer.uel input[type="email"],
+.footer.uel input[type="email"]::placeholder{
+    color: var(--bg-color);
+}
+.footer.uel a:hover,
+.footer.uel form .bx,
+.footer.uel form .bxs-envelope,
+.footer.uel h2,
+.footer.uel .bx{
+    color: var(--uel-secondary-color);
+}
+.footer.uel form{
+    border-bottom: 1px solid var(--uel-secondary-color);
+}
+.footer.uecl .social .bx{
+    background: var(--uecl-secondary-color);
+    color: var(--uecl-primary-color);
+}
+.footer.uecl .social .bx:hover{
+    background: var(--uecl-primary-color);
+    color: var(--uecl-secondary-color);
+}
+.footer.uecl a,
+.footer.uecl p,
+.footer.uecl input[type="email"],
+.footer.uecl input[type="email"]::placeholder{
+    color: var(--bg-color);
+}
+.footer.uecl a:hover,
+.footer.uecl form .bx,
+.footer.uecl form .bxs-envelope,
+.footer.uecl h2,
+.footer.uecl .bx{
+    color: var(--uecl-secondary-color);
+}
+.footer.uecl form{
+    border-bottom: 1px solid var(--uecl-secondary-color);
 }
 .footer-box{
     display: flex;
