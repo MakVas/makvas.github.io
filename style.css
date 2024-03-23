@@ -442,20 +442,8 @@ header.uecl{
     display: flex;
     align-items: center;
 }
-.teambox1{
+.teambox{
     background: #fef4ea;
-}
-.teambox2{
-    background: #e9f4e3;
-}
-.teambox3{
-    background: #faeaea;
-}
-.teambox4{
-    background: #eeeef9;
-}
-.teambox5{
-    background: #f7f6d7;
 }
 .players{
     max-width: 968px;
