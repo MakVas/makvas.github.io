@@ -361,6 +361,25 @@ header.uecl{
     margin-right: 0.5rem;
     transition: transform 0.3s ease;
 }
+.matchbox:hover {
+    transform: scale(1.05);
+}
+.all-matches-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+.all-matches-container .matchbox{
+    width: auto;
+    height: 120px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 15px;
+    border-radius: 0.5rem;
+}
 .matchbox.ucl{
     border: 5px solid var(--ucl-secondary-color);
     background: var(--ucl-third-color);
@@ -372,9 +391,6 @@ header.uecl{
 .matchbox.uecl{
     border: 5px solid var(--uecl-secondary-color);
     background: var(--uecl-primary-color);
-}
-.matchbox:hover {
-    transform: scale(1.05);
 }
 .matchbox .teamImg{
     width: auto;
