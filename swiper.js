@@ -1,4 +1,3 @@
-// Свайпер
 var swiper = new Swiper(".home", {
     spaceBetween: 0,
     centeredSlides: true,
