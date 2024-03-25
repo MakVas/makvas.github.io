@@ -53,10 +53,11 @@ header.uecl{
     background-color: var(--uecl-primary-color);
 }
 .clock {
+    width: 90px;
     position: flex;
     color: var(--text-color);
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 500;
 }
 .profile.ucl img{
     width: auto;
