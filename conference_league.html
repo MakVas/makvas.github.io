@@ -1,195 +1,209 @@
 <!DOCTYPE html>
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Лабораторна 2</title>
     <!-- Посилання на CSS, іконки та інші елементи -->
-    <link rel="stylesheet" href="style.css"> 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 </head>
 <body class="body uecl">
-    <!-- Навігація -->
-    <header class="header uecl">
-        <!-- Логотип -->
-        <a href="index.html" class="logo uecl"><i class='bx bx-football'></i>Football Stats</a>
-        <div class="bx bx-menu" style="color: #fff;" id="menu-icon"></div>
+<!-- Навігація -->
+<header class="header uecl">
+    <!-- Логотип -->
+    <a href="index.html" class="logo uecl"><i class='bx bx-football'></i>Football Stats</a>
+    <div class="bx bx-menu" style="color: #fff;" id="menu-icon"></div>
 
-        <!-- Навігація між вкладками-->
-        <ul class="navbar uecl">
-            <li><a href="#matches" class="home-active">Matchday</a></li>
-            <li><a href="#players">Top scorers</a></li>
-            <li><a href="#about">Daily video</a></li>
-        </ul>
-        <!-- Профіль -->
-        <div class="profile ucl">
-            <img src="https://img.uefa.com/imgml/uefacom/uefaeuropaconferenceleague/logo_small.svg" alt="">
-        </div>
-    </header>
-    <!-- Сторінка "Матчі" -->
-    <section class="matches ucl" id="matches">
-        <div class="heading uecl">
-            <h1>Matchday<br><span>Fixtures</h1>
-                <a href="all_matches.html" class="btn uecl">All matches<i class='bx bx-right-arrow-alt'></i></a>
-        </div>
-        <!-- Контент -->
-        <div class="matches-wrapper">
-            <!-- Бокс1  -->
-            <a href="#">
-                <div class="matchbox uecl">
-                    <h2>11 Apr, 19:45</h2>
-                    <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/64388.png" alt="FC Viktoria Plzeň">Viktoria Plzeň</span>
-                    <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/52817.png" alt="ACF Fiorentina">Fiorentina</span>
-                </div>
-            </a>
-            <!-- Бокс2  -->
-            <a href="#">
-                <div class="matchbox uecl">
-                    <h2>11 Apr, 19:45</h2>
-                    <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/2610.png" alt="Olympiacos FC">Olympiacos</span>
-                    <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/52692.png" alt="Fenerbahçe SK">Fenerbahçe</span>
-                </div>
-            </a>
-            <!-- Бокс3  -->
-            <a href="#">
-                <div class="matchbox uecl">
-                    <h2>11 Apr, 22:00</h2>
-                    <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/52683.png" alt="Aston Villa">Aston Villa</span>
-                    <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/75797.png" alt="Lille">Lille</span>
-                </div>
-            </a>
-            <!-- Бокс4  -->
-            <a href="#">
-                <div class="matchbox uecl">
-                    <h2>11 Apr, 22:00</h2>
-                    <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/50043.png" alt="Club Brugge">Club Brugge</span>
-                    <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/50130.png" alt="PAOK FC">PAOK</span>
-                </div>
-            </a>
-        </div>
-    </section>
-    <!-- "Гравці" -->
-    <section class="players" id="players">
-        <div class="heading uecl">
-            <h1>Top scorers<br><span>In the Conference League</h1>
-        </div>
-        <!-- Контент -->
-        <table class="players-container uecl">
-            <thead>
-                <tr>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th>Matches played</th>
-                    <th>&nbsp;Goals&nbsp;</th>
-                    <th>&nbsp;Assists&nbsp;</th>
-                </tr>
-            </thead>
-                <tbody>
-                <tr class="box">
-                    <td>1</td>
-                    <td><img class="playerImg" src="https://img.uefa.com/imgml/TP/players/2019/2024/324x324/1906423.jpg" alt=""></td>
-                    <td>
-                        <h2>Zahavi</h2>
-                        <span>Maccabi Tel Aviv - Forward</span>
-                    </td>
-                    <td><span>8</span></td>
-                    <td><span>8</span></td>
-                    <td><span>1</span></td>
-                </tr>
-                <tr class="box">
-                    <td>2</td>
-                    <td><img class="playerImg" src="https://img.uefa.com/imgml/TP/players/2019/2024/324x324/250063394.jpg" alt=""></td>
-                    <td>
-                        <h2>Petković</h2>
-                        <span>Dinamo Zagreb - Forward</span>
-                    </td>
-                    <td><span>7</span></td>
-                    <td><span>7</span></td>
-                    <td><span>0</span></td>
-                </tr>
-                <tr class="box">
-                    <td>3</td>
-                    <td><img class="playerImg"src="https://img.uefa.com/imgml/TP/players/2019/2024/324x324/250042083.jpg"alt=""></td>
-                    <td>
-                        <h2>Do. Peretz</h2>
-                        <span>Maccabi Tel Aviv - Midfielder</span>
-                    </td>
-                    <td><span>8</span></td>
-                    <td><span>5</span></td>
-                    <td><span>2</span></td>
-                </tr>
-                <tr class="box">
-                    <td>3</td>
-                    <td><img class="playerImg"src="https://img.uefa.com/imgml/TP/players/2019/2024/324x324/250182397.jpg"alt=""></td>
-                    <td>
-                        <h2>Orban</h2>
-                        <span>Gent - Forward</span>
-                    </td>
-                    <td><span>5</span></td>
-                    <td><span>5</span></td>
-                    <td><span>0</span></td>
-                </tr>
-                <tr class="box">
-                    <td>3</td>
-                    <td><img class="playerImg" src="https://img.uefa.com/imgml/TP/players/2019/2024/324x324/250108687.jpg" alt=""></td>
-                    <td>
-                        <h2>Nygren</h2>
-                        <span>Nordsjælland - Forward</span>
-                    </td>
-                    <td><span>5</span></td>
-                    <td><span>5</span></td>
-                    <td><span>0</span></td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-    <!-- "Відео дня" -->
-    <section class="about" id="about">
-        <iframe width=100% src="https://www.youtube.com/embed/GLx1GjQQ9DM?si=poRXtYF_F_Lv_MrH" frameborder="0"></iframe>
-        <div class="about-text uecl">
-            <span>Daily video</span>
-            <p>Great Goals Round of 16 2nd leg | Bailey, Olsen...</p>
-            <p>Watch the best goals from UEFA Europa Conference League Round of 16 2nd leg fixtures featuring strikes from Leon Bailey and Andreas Skov Olsen. Which one was your favourite?</p>
-            <a href="https://www.youtube.com/watch?v=GLx1GjQQ9DM" class="btn uecl">Watch<i class='bx bx-right-arrow-alt'></i></a>
-        </div>
-    </section>
-    <!-- "Нижня частина" -->
-    <section class="footer uecl" id="footer">
-        <div class="footer-box">
-            <a href="index.html" class="logo"><i class='bx bx-football'></i>Football Stats</a>
-            <p>Follow us<br>on social networks</p>
-            <div class="social">
-                <a href="https://t.me/makoviyandriy"><i class='bx bxl-telegram'></i></a>
-                <a href="https://www.instagram.com/makoviyandriy/"><i class='bx bxl-instagram'></i></a>
-                <a href="https://github.com/MakVas"><i class='bx bxl-github'></i></a>
-            </div>
-        </div>
-        <div class="footer-box">
-            <h2>Navigation</h2>
-            <a href="index.html">Home</a>
-            <a href="all_matches.html">All matches</a>
-            <a href="all_teams.html">All clubs</a>
-        </div>
-        <div class="footer-box">
-            <h2>Tournaments</h2>
-            <a href="champions_league.html">Champions League</a>
-            <a href="europa_league.html">Europa League</a>
-            <a href="conference_league.html">Conference League</a>
-        </div>
-        <div class="footer-box">
-            <h2>Notifications</h2>
-            <p>Receive match notifications<br>to your email</p>
-            <form action="">
-                <i class='bx bxs-envelope'></i>
-                <input type="email" name="" id="" placeholder="Enter your email">
-                <i class='bx bx-arrow-back bx-rotate-180'></i>
-            </form>
-        </div>
-    </section>
-    <!-- Copyright -->
-    <div class="copyright">
-        <p>&#169; Makovii Andrii</p>
+    <!-- Навігація між вкладками-->
+    <ul class="navbar uecl">
+        <li><a href="#matches" class="home-active">Matchday</a></li>
+        <li><a href="#players">Top scorers</a></li>
+        <li><a href="#about">Daily video</a></li>
+    </ul>
+    <!-- Профіль -->
+    <div class="profile ucl">
+        <img src="https://img.uefa.com/imgml/uefacom/uefaeuropaconferenceleague/logo_small.svg" alt="">
     </div>
-    <!-- Посилання на JS -->
-    <script src="main.js"></script>
+</header>
+<!-- Сторінка "Матчі" -->
+<section class="matches ucl" id="matches">
+    <div class="heading uecl">
+        <h1>Matchday<br><span>Fixtures</span></h1>
+        <a href="all_matches.html" class="btn uecl">All matches<i class='bx bx-right-arrow-alt'></i></a>
+    </div>
+    <!-- Контент -->
+    <div class="matches-wrapper">
+        <!-- Бокс1  -->
+        <a href="#">
+            <div class="matchbox uecl">
+                <h2>11 Apr, 19:45</h2>
+                <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/64388.png"
+                           alt="FC Viktoria Plzeň">Viktoria Plzeň</span>
+                <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/52817.png"
+                           alt="ACF Fiorentina">Fiorentina</span>
+            </div>
+        </a>
+        <!-- Бокс2  -->
+        <a href="#">
+            <div class="matchbox uecl">
+                <h2>11 Apr, 19:45</h2>
+                <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/2610.png"
+                           alt="Olympiacos FC">Olympiacos</span>
+                <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/52692.png"
+                           alt="Fenerbahçe SK">Fenerbahçe</span>
+            </div>
+        </a>
+        <!-- Бокс3  -->
+        <a href="#">
+            <div class="matchbox uecl">
+                <h2>11 Apr, 22:00</h2>
+                <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/52683.png"
+                           alt="Aston Villa">Aston Villa</span>
+                <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/75797.png" alt="Lille">Lille</span>
+            </div>
+        </a>
+        <!-- Бокс4  -->
+        <a href="#">
+            <div class="matchbox uecl">
+                <h2>11 Apr, 22:00</h2>
+                <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/50043.png"
+                           alt="Club Brugge">Club Brugge</span>
+                <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/50130.png"
+                           alt="PAOK FC">PAOK</span>
+            </div>
+        </a>
+    </div>
+</section>
+<!-- "Гравці" -->
+<section class="players" id="players">
+    <div class="heading uecl">
+        <h1>Top scorers<br><span>In the Conference League</span></h1>
+    </div>
+    <!-- Контент -->
+    <table class="players-container uecl">
+        <thead>
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th>Matches played</th>
+            <th>&nbsp;Goals&nbsp;</th>
+            <th>&nbsp;Assists&nbsp;</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="box">
+            <td>1</td>
+            <td><img class="playerImg" src="https://img.uefa.com/imgml/TP/players/2019/2024/324x324/1906423.jpg" alt="">
+            </td>
+            <td>
+                <h2>Zahavi</h2>
+                <span>Maccabi Tel Aviv - Forward</span>
+            </td>
+            <td><span>8</span></td>
+            <td><span>8</span></td>
+            <td><span>1</span></td>
+        </tr>
+        <tr class="box">
+            <td>2</td>
+            <td><img class="playerImg" src="https://img.uefa.com/imgml/TP/players/2019/2024/324x324/250063394.jpg"
+                     alt=""></td>
+            <td>
+                <h2>Petković</h2>
+                <span>Dinamo Zagreb - Forward</span>
+            </td>
+            <td><span>7</span></td>
+            <td><span>7</span></td>
+            <td><span>0</span></td>
+        </tr>
+        <tr class="box">
+            <td>3</td>
+            <td><img class="playerImg" src="https://img.uefa.com/imgml/TP/players/2019/2024/324x324/250042083.jpg"
+                     alt=""></td>
+            <td>
+                <h2>Do. Peretz</h2>
+                <span>Maccabi Tel Aviv - Midfielder</span>
+            </td>
+            <td><span>8</span></td>
+            <td><span>5</span></td>
+            <td><span>2</span></td>
+        </tr>
+        <tr class="box">
+            <td>3</td>
+            <td><img class="playerImg" src="https://img.uefa.com/imgml/TP/players/2019/2024/324x324/250182397.jpg"
+                     alt=""></td>
+            <td>
+                <h2>Orban</h2>
+                <span>Gent - Forward</span>
+            </td>
+            <td><span>5</span></td>
+            <td><span>5</span></td>
+            <td><span>0</span></td>
+        </tr>
+        <tr class="box">
+            <td>3</td>
+            <td><img class="playerImg" src="https://img.uefa.com/imgml/TP/players/2019/2024/324x324/250108687.jpg"
+                     alt=""></td>
+            <td>
+                <h2>Nygren</h2>
+                <span>Nordsjælland - Forward</span>
+            </td>
+            <td><span>5</span></td>
+            <td><span>5</span></td>
+            <td><span>0</span></td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+<!-- "Відео дня" -->
+<section class="about" id="about">
+    <iframe width=100% src="https://www.youtube.com/embed/GLx1GjQQ9DM?si=poRXtYF_F_Lv_MrH" frameborder="0"></iframe>
+    <div class="about-text uecl">
+        <span>Daily video</span>
+        <p>Great Goals Round of 16 2nd leg | Bailey, Olsen...</p>
+        <p>Watch the best goals from UEFA Europa Conference League Round of 16 2nd leg fixtures featuring strikes from
+            Leon Bailey and Andreas Skov Olsen. Which one was your favourite?</p>
+        <a href="https://www.youtube.com/watch?v=GLx1GjQQ9DM" class="btn uecl">Watch<i
+                class='bx bx-right-arrow-alt'></i></a>
+    </div>
+</section>
+<!-- "Нижня частина" -->
+<section class="footer uecl" id="footer">
+    <div class="footer-box">
+        <a href="index.html" class="logo"><i class='bx bx-football'></i>Football Stats</a>
+        <p>Follow us<br>on social networks</p>
+        <div class="social">
+            <a href="https://t.me/makoviyandriy"><i class='bx bxl-telegram'></i></a>
+            <a href="https://www.instagram.com/makoviyandriy/"><i class='bx bxl-instagram'></i></a>
+            <a href="https://github.com/MakVas"><i class='bx bxl-github'></i></a>
+        </div>
+    </div>
+    <div class="footer-box">
+        <h2>Navigation</h2>
+        <a href="index.html">Home</a>
+        <a href="all_matches.html">All matches</a>
+        <a href="all_teams.html">All clubs</a>
+    </div>
+    <div class="footer-box">
+        <h2>Tournaments</h2>
+        <a href="champions_league.html">Champions League</a>
+        <a href="europa_league.html">Europa League</a>
+        <a href="conference_league.html">Conference League</a>
+    </div>
+    <div class="footer-box">
+        <h2>Notifications</h2>
+        <p>Receive match notifications<br>to your email</p>
+        <form action="">
+            <i class='bx bxs-envelope'></i>
+            <input type="email" name="" id="" placeholder="Enter your email">
+            <i class='bx bx-arrow-back bx-rotate-180'></i>
+        </form>
+    </div>
+</section>
+<!-- Copyright -->
+<div class="copyright">
+    <p>&#169; Makovii Andrii</p>
+</div>
+<!-- Посилання на JS -->
+<script src="main.js"></script>
 </body>
-</html>

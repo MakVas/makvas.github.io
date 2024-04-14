@@ -1,207 +1,230 @@
 <!DOCTYPE html>
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Лабораторна 2</title>
     <!-- Посилання на CSS, іконки та інші елементи -->
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
-    <!-- Навігація -->
-    <header>
-        <!-- Логотип -->
-        <a href="index.html" class="logo"><i class='bx bx-football'></i>Football Stats</a>
-        <div class="bx bx-menu" id="menu-icon"></div>
-        <!-- Навігація між вкладками-->
-        <ul class="navbar">
-            <li><a href="#home" class="home-active">Home</a></li>
-            <li><a href="#matches">Matchday</a></li>
-        </ul>
-        <div class="profile">
-        </div>
-    </header>
-     <!-- Домашня сторінка -->
-     <section class="home swiper" id="home">
-        <div class="swiper-wrapper">
-            <!-- Cлайд1 -->
-            <div class="swiper-slide container slide1">
-                <div class="home-text">
-                    <span class="uclText">Champions league</span>
-                    <h1>Follow the<br>Champions League<br>matches</h1>
-                    <a href="champions_league.html" class="btn btn1">Watch<i class='bx bx-right-arrow-alt'></i></a>
-                </div>
-                <img src="img/champions_league.png" alt="">
-            </div>
-            <!-- Cлайд2 -->
-            <div class="swiper-slide container slide2">
-                <div class="home-text">
-                    <span class="uelText">Europa League</span>
-                    <h1>Follow the<br>Europa League<br>matches</h1>
-                    <a href="europa_league.html" class="btn btn2">Watch<i class='bx bx-right-arrow-alt'></i></a>
-                </div>
-                <img src="img/europa_league.png" alt="">
-            </div>
-            <!-- Cлайд3 -->
-            <div class="swiper-slide container slide3">
-                <div class="home-text">
-                    <span class="ueclText">Conferense League</span>
-                    <h1>Follow the<br>Conference League<br>matches</h1>
-                    <a href="conference_league.html" class="btn btn3">Watch<i class='bx bx-right-arrow-alt'></i></a>
-                </div>
-                <img src="img/conference_league.png" alt="">
-            </div>
-        </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-pagination"></div>
-    </section>
-   <!-- Сторінка "Матчі" -->
-   <section class="matches" id="matches">
-        <div class="heading">
-            <h1>Matchday<br><span>Fixtures</h1>
-        </div>
-        <!-- Контент -->
-        <div class="all-matches-container">
-            <!-- Бокс1  -->
-            <a href="#">
-                <div class="matchbox ucl">
-                    <h2>9 Apr, 22:00</h2>
-                    <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/50051.png" alt="Real Madrid CF">Real Madrid</span>
-                    <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/52919.png" alt="Manchester City">Man City</span>
-                </div>
-            </a>
-            <!-- Бокс2  -->
-            <a href="#">
-                <div class="matchbox ucl">
-                    <h2>9 Apr, 22:00</h2>
-                    <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/52280.png" alt="Arsenal FC">Arsenal</span>
-                    <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/50037.png" alt="FC Bayern München">Bayern</span>
-                </div>
-            </a>
-            <!-- Бокс3  -->
-            <a href="#">
-                <div class="matchbox ucl">
-                    <h2>10 Apr, 22:00</h2>
-                    <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/52747.png" alt="Paris Saint-Germain">Paris</span>
-                    <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/50080.png" alt="FC Barcelona">Barcelona</span>
-                </div>
-            </a>
-            <!-- Бокс4  -->
-            <a href="#">
-                <div class="matchbox ucl">
-                    <h2>10 Apr, 22:00</h2>
-                    <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/50124.png" alt="Club Atlético de Madrid">Atlético Madrid</span>
-                    <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/52758.png" alt="Borussia Dortmund">Dortmund</span>
-                </div>
-            </a>
-            <!-- Бокс5  -->
-            <a href="#">
-                <div class="matchbox uel">
-                    <h2>11 Apr, 22:00</h2>
-                    <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/50147.png" alt="SL Benfica">Benfica</span>
-                    <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/52748.png" alt="Olympique de Marseille">Marseille</span>
-                </div>
-            </a>
-            <!-- Бокс6  -->
-            <a href="#">
-                <div class="matchbox uel">
-                    <h2>11 Apr, 22:00</h2>
-                    <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/50109.png" alt="Bayer 04 Leverkusen">Leverkusen</span>
-                    <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/53358.png" alt="West Ham United FC">West Ham</span>
-                </div>
-            </a>
-            <!-- Бокс7  -->
-            <a href="#">
-                <div class="matchbox uel">
-                    <h2>11 Apr, 22:00</h2>
-                    <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/7889.png" alt="Liverpool FC">Liverpool</span>
-                    <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/52816.png" alt="Atalanta BC">Atalanta</span>
-                </div>
-            </a>
-            <!-- Бокс8  -->
-            <a href="#">
-                <div class="matchbox uel">
-                    <h2>11 Apr, 22:00</h2>
-                    <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/50058.png" alt="AFC Milan">Milan</span>
-                    <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/50137.png" alt="Roma FC">Roma</span>
-                </div>
-            </a>
-            <!-- Бокс9  -->
-            <a href="#">
-                <div class="matchbox uecl">
-                    <h2>11 Apr, 19:45</h2>
-                    <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/64388.png" alt="FC Viktoria Plzeň">Viktoria Plzeň</span>
-                    <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/52817.png" alt="ACF Fiorentina">Fiorentina</span>
-                </div>
-            </a>
-            <!-- Бокс10  -->
-            <a href="#">
-                <div class="matchbox uecl">
-                    <h2>11 Apr, 19:45</h2>
-                    <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/2610.png" alt="Olympiacos FC">Olympiacos</span>
-                    <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/52692.png" alt="Fenerbahçe SK">Fenerbahçe</span>
-                </div>
-            </a>
-            <!-- Бокс11  -->
-            <a href="#">
-                <div class="matchbox uecl">
-                    <h2>11 Apr, 22:00</h2>
-                    <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/52683.png" alt="Aston Villa">Aston Villa</span>
-                    <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/75797.png" alt="Lille">Lille</span>
-                </div>
-            </a>
-            <!-- Бокс12  -->
-            <a href="#">
-                <div class="matchbox uecl">
-                    <h2>11 Apr, 22:00</h2>
-                    <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/50043.png" alt="Club Brugge">Club Brugge</span>
-                    <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/50130.png" alt="PAOK FC">PAOK</span>
-                </div>
-            </a>
-        </div>
-    </section>
-    <!-- "Нижня частина" -->
-    <section class="footer" id="footer">
-        <div class="footer-box">
-            <a href="index.html" class="logo"><i class='bx bx-football'></i>Football Stats</a>
-            <p>Follow us<br>on social networks</p>
-            <div class="social">
-                <a href="https://t.me/makoviyandriy"><i class='bx bxl-telegram'></i></a>
-                <a href="https://www.instagram.com/makoviyandriy/"><i class='bx bxl-instagram'></i></a>
-                <a href="https://github.com/MakVas"><i class='bx bxl-github'></i></a>
-            </div>
-        </div>
-        <div class="footer-box">
-            <h2>Navigation</h2>
-            <a href="index.html">Home</a>
-            <a href="all_matches.html">All matches</a>
-            <a href="all_teams.html">All clubs</a>
-        </div>
-        <div class="footer-box">
-            <h2>Tournaments</h2>
-            <a href="champions_league.html">Champions League</a>
-            <a href="europa_league.html">Europa League</a>
-            <a href="conference_league.html">Conference League</a>
-        </div>
-        <div class="footer-box">
-            <h2>Notifications</h2>
-            <p>Receive match notifications<br>to your email</p>
-            <form action="">
-                <i class='bx bxs-envelope'></i>
-                <input type="email" name="" id="" placeholder="Enter your email">
-                <i class='bx bx-arrow-back bx-rotate-180'></i>
-            </form>
-        </div>
-    </section>
-    <!-- Copyright -->
-    <div class="copyright">
-        <p>&#169; Makovii Andrii</p>
+<!-- Навігація -->
+<header>
+    <!-- Логотип -->
+    <a href="index.html" class="logo"><i class='bx bx-football'></i>Football Stats</a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+    <!-- Навігація між вкладками-->
+    <ul class="navbar">
+        <li><a href="#home" class="home-active">Home</a></li>
+        <li><a href="#matches">Matchday</a></li>
+    </ul>
+    <div class="profile">
     </div>
-    <!-- Свайпер JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- Посилання на JS -->
-    <script src="main.js"></script>
-    <script src="swiper.js"></script>
+</header>
+<!-- Домашня сторінка -->
+<section class="home swiper" id="home">
+    <div class="swiper-wrapper">
+        <!-- Cлайд1 -->
+        <div class="swiper-slide container slide1">
+            <div class="home-text">
+                <span class="uclText">Champions league</span>
+                <h1>Follow the<br>Champions League<br>matches</h1>
+                <a href="champions_league.html" class="btn btn1">Watch<i class='bx bx-right-arrow-alt'></i></a>
+            </div>
+            <img src="img/champions_league.png" alt="">
+        </div>
+        <!-- Cлайд2 -->
+        <div class="swiper-slide container slide2">
+            <div class="home-text">
+                <span class="uelText">Europa League</span>
+                <h1>Follow the<br>Europa League<br>matches</h1>
+                <a href="europa_league.html" class="btn btn2">Watch<i class='bx bx-right-arrow-alt'></i></a>
+            </div>
+            <img src="img/europa_league.png" alt="">
+        </div>
+        <!-- Cлайд3 -->
+        <div class="swiper-slide container slide3">
+            <div class="home-text">
+                <span class="ueclText">Conferense League</span>
+                <h1>Follow the<br>Conference League<br>matches</h1>
+                <a href="conference_league.html" class="btn btn3">Watch<i class='bx bx-right-arrow-alt'></i></a>
+            </div>
+            <img src="img/conference_league.png" alt="">
+        </div>
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-pagination"></div>
+</section>
+<!-- Сторінка "Матчі" -->
+<section class="matches" id="matches">
+    <div class="heading">
+        <h1>Matchday<br><span>Fixtures</span></h1>
+    </div>
+    <!-- Контент -->
+    <div class="all-matches-container">
+        <!-- Бокс1  -->
+        <a href="#">
+            <div class="matchbox ucl">
+                <h2>9 Apr, 22:00</h2>
+                <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/50051.png"
+                           alt="Real Madrid CF">Real Madrid</span>
+                <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/52919.png"
+                           alt="Manchester City">Man City</span>
+            </div>
+        </a>
+        <!-- Бокс2  -->
+        <a href="#">
+            <div class="matchbox ucl">
+                <h2>9 Apr, 22:00</h2>
+                <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/52280.png"
+                           alt="Arsenal FC">Arsenal</span>
+                <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/50037.png"
+                           alt="FC Bayern München">Bayern</span>
+            </div>
+        </a>
+        <!-- Бокс3  -->
+        <a href="#">
+            <div class="matchbox ucl">
+                <h2>10 Apr, 22:00</h2>
+                <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/52747.png"
+                           alt="Paris Saint-Germain">Paris</span>
+                <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/50080.png"
+                           alt="FC Barcelona">Barcelona</span>
+            </div>
+        </a>
+        <!-- Бокс4  -->
+        <a href="#">
+            <div class="matchbox ucl">
+                <h2>10 Apr, 22:00</h2>
+                <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/50124.png"
+                           alt="Club Atlético de Madrid">Atlético Madrid</span>
+                <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/52758.png"
+                           alt="Borussia Dortmund">Dortmund</span>
+            </div>
+        </a>
+        <!-- Бокс5  -->
+        <a href="#">
+            <div class="matchbox uel">
+                <h2>11 Apr, 22:00</h2>
+                <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/50147.png"
+                           alt="SL Benfica">Benfica</span>
+                <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/52748.png"
+                           alt="Olympique de Marseille">Marseille</span>
+            </div>
+        </a>
+        <!-- Бокс6  -->
+        <a href="#">
+            <div class="matchbox uel">
+                <h2>11 Apr, 22:00</h2>
+                <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/50109.png"
+                           alt="Bayer 04 Leverkusen">Leverkusen</span>
+                <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/53358.png"
+                           alt="West Ham United FC">West Ham</span>
+            </div>
+        </a>
+        <!-- Бокс7  -->
+        <a href="#">
+            <div class="matchbox uel">
+                <h2>11 Apr, 22:00</h2>
+                <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/7889.png"
+                           alt="Liverpool FC">Liverpool</span>
+                <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/52816.png"
+                           alt="Atalanta BC">Atalanta</span>
+            </div>
+        </a>
+        <!-- Бокс8  -->
+        <a href="#">
+            <div class="matchbox uel">
+                <h2>11 Apr, 22:00</h2>
+                <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/50058.png"
+                           alt="AFC Milan">Milan</span>
+                <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/50137.png"
+                           alt="Roma FC">Roma</span>
+            </div>
+        </a>
+        <!-- Бокс9  -->
+        <a href="#">
+            <div class="matchbox uecl">
+                <h2>11 Apr, 19:45</h2>
+                <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/64388.png"
+                           alt="FC Viktoria Plzeň">Viktoria Plzeň</span>
+                <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/52817.png"
+                           alt="ACF Fiorentina">Fiorentina</span>
+            </div>
+        </a>
+        <!-- Бокс10  -->
+        <a href="#">
+            <div class="matchbox uecl">
+                <h2>11 Apr, 19:45</h2>
+                <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/2610.png"
+                           alt="Olympiacos FC">Olympiacos</span>
+                <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/52692.png"
+                           alt="Fenerbahçe SK">Fenerbahçe</span>
+            </div>
+        </a>
+        <!-- Бокс11  -->
+        <a href="#">
+            <div class="matchbox uecl">
+                <h2>11 Apr, 22:00</h2>
+                <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/52683.png"
+                           alt="Aston Villa">Aston Villa</span>
+                <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/75797.png" alt="Lille">Lille</span>
+            </div>
+        </a>
+        <!-- Бокс12  -->
+        <a href="#">
+            <div class="matchbox uecl">
+                <h2>11 Apr, 22:00</h2>
+                <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/50043.png"
+                           alt="Club Brugge">Club Brugge</span>
+                <span><img class="teamImg" src="https://img.uefa.com/imgml/TP/teams/logos/70x70/50130.png"
+                           alt="PAOK FC">PAOK</span>
+            </div>
+        </a>
+    </div>
+</section>
+<!-- "Нижня частина" -->
+<section class="footer" id="footer">
+    <div class="footer-box">
+        <a href="index.html" class="logo"><i class='bx bx-football'></i>Football Stats</a>
+        <p>Follow us<br>on social networks</p>
+        <div class="social">
+            <a href="https://t.me/makoviyandriy"><i class='bx bxl-telegram'></i></a>
+            <a href="https://www.instagram.com/makoviyandriy/"><i class='bx bxl-instagram'></i></a>
+            <a href="https://github.com/MakVas"><i class='bx bxl-github'></i></a>
+        </div>
+    </div>
+    <div class="footer-box">
+        <h2>Navigation</h2>
+        <a href="index.html">Home</a>
+        <a href="all_matches.html">All matches</a>
+        <a href="all_teams.html">All clubs</a>
+    </div>
+    <div class="footer-box">
+        <h2>Tournaments</h2>
+        <a href="champions_league.html">Champions League</a>
+        <a href="europa_league.html">Europa League</a>
+        <a href="conference_league.html">Conference League</a>
+    </div>
+    <div class="footer-box">
+        <h2>Notifications</h2>
+        <p>Receive match notifications<br>to your email</p>
+        <form action="">
+            <i class='bx bxs-envelope'></i>
+            <input type="email" name="" id="" placeholder="Enter your email">
+            <i class='bx bx-arrow-back bx-rotate-180'></i>
+        </form>
+    </div>
+</section>
+<!-- Copyright -->
+<div class="copyright">
+    <p>&#169; Makovii Andrii</p>
+</div>
+<!-- Свайпер JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- Посилання на JS -->
+<script src="main.js"></script>
+<script src="swiper.js"></script>
 </body>
-</html>

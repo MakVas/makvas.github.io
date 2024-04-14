@@ -54,7 +54,6 @@ header.uecl{
 }
 .clock {
     width: 90px;
-    position: flex;
     color: var(--text-color);
     font-size: 1.5rem;
     font-weight: 500;
@@ -296,20 +295,16 @@ header.uecl{
     background-color: #fff !important;
 }
 .swiper-button-next{
-    background: url(img/white-right-arrow.png);
-    background-repeat: no-repeat;
     background-size: 100% auto;
-    background-position: center;
+    background: url(img/white-right-arrow.png) no-repeat center;
     margin-right: 20px;
 }
 .swiper-button-next::after{
     display: none;
 }
 .swiper-button-prev{
-    background: url(img/white-left-arrow.png);
-    background-repeat: no-repeat;
     background-size: 100% auto;
-    background-position: center;
+    background: url(img/white-left-arrow.png) no-repeat center;
     margin-left: 20px;
 }
 .swiper-button-prev::after{
@@ -564,7 +559,6 @@ header.uecl{
     max-width: 968px;
     margin-left: auto;
     margin-right: auto;
-    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(21rem, auto));
     align-items: center;
     gap: 1.5rem;
@@ -767,10 +761,10 @@ header.uecl{
         padding: 18px 60px;
     }
     .home-text{
-        padding: 40 100px;
+        padding: 40px 100px;
     }
     .container img{
-        padding: 40 100px;
+        padding: 40px 100px;
     }
 }
 @media (max-width:991px){
@@ -922,13 +916,13 @@ header.uecl{
         gap: 1.5rem;
     }
     .players-container.all th:last-child{
-        font-size: 0rem;
+        font-size: 0;
     }
     .players-container tr.box td .playerImg{
-        height: 0px;
+        height: 0;
     }
     .players-container.all tr.box td .tournamentImg{
-        height: 0px;
+        height: 0;
     }
 }
 @media (max-width:380px){

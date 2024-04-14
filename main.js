@@ -14,11 +14,11 @@ window.onscroll = () => {
 window.addEventListener('resize', setIframeHeight);
 
 function setIframeHeight() {
-    var iframes = document.querySelectorAll('.about iframe');
-    for (var i = 0; i < iframes.length; i++) {
-        var iframe = iframes[i];
-        var width = iframe.offsetWidth;
-        var height = width * 0.5625;
+    const iframes = document.querySelectorAll('.about iframe');
+    for (let i = 0; i < iframes.length; i++) {
+        const iframe = iframes[i];
+        const width = iframe.offsetWidth;
+        const height = width * 0.5625;
         iframe.style.height = height + 'px';
     }
 }
