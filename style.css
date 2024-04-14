@@ -54,6 +54,7 @@ header.uecl{
 }
 .clock {
     width: 90px;
+    position: relative;
     color: var(--text-color);
     font-size: 1.5rem;
     font-weight: 500;
@@ -128,12 +129,12 @@ header.uecl{
 .navbar.uel a:hover,
 .navbar.uel .home-active{
     background: var(--uel-secondary-color);
-    color: var(--uel-third-color);
+    color: var(--uel-primary-color);
 }
 .navbar.uecl a:hover,
 .navbar.uecl .home-active{
     background: var(--uecl-secondary-color);
-    color: var(--uecl-third-color);
+    color: var(--uecl-primary-color);
 }
 #menu-icon{
     font-size: 24px;
@@ -295,16 +296,20 @@ header.uecl{
     background-color: #fff !important;
 }
 .swiper-button-next{
+    background: url(img/white-right-arrow.png);
+    background-repeat: no-repeat;
     background-size: 100% auto;
-    background: url(img/white-right-arrow.png) no-repeat center;
+    background-position: center;
     margin-right: 20px;
 }
 .swiper-button-next::after{
     display: none;
 }
 .swiper-button-prev{
+    background: url(img/white-left-arrow.png);
+    background-repeat: no-repeat;
     background-size: 100% auto;
-    background: url(img/white-left-arrow.png) no-repeat center;
+    background-position: center;
     margin-left: 20px;
 }
 .swiper-button-prev::after{
@@ -559,10 +564,10 @@ header.uecl{
     max-width: 968px;
     margin-left: auto;
     margin-right: auto;
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(21rem, auto));
     align-items: center;
     gap: 1.5rem;
-    display: flex;
 }
 .about iframe, .about .about-text {
     flex: 1;
@@ -759,12 +764,6 @@ header.uecl{
 @media (max-width:1080px){
     header{
         padding: 18px 60px;
-    }
-    .home-text{
-        padding: 40px 100px;
-    }
-    .container img{
-        padding: 40px 100px;
     }
 }
 @media (max-width:991px){
