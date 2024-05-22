@@ -148,6 +148,7 @@ header.uecl{
     min-height: 640px;
     display: flex;
     align-items: center;
+
 }
 .slide1 {
     background-image: url('https://img.uefa.com/imgml/uefacom/ucl/2021/backgroundDark01L.jpg');
@@ -482,6 +483,10 @@ header.uecl{
     border-radius: 0.5rem;
     overflow: hidden;
     background-color: #fef4ea;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .players-container.ucl{
     background-image: url("https://img.uefa.com/imgml/uefacom/ucl/fallback.jpg");
@@ -618,12 +623,14 @@ header.uecl{
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     gap: 1.5rem;
     margin-top: 2rem;
-    background: #fef4ea;
     border-radius: 0.5rem;
     padding: 20px;
+    background: #fef4ea no-repeat fixed center;
+    background-size: cover;
 }
 .footer.ucl{
     background-image: url("https://img.uefa.com/imgml/uefacom/ucl/fallback.jpg");
+
 }
 .footer.uel{
     background-image: url("https://img.uefa.com/imgml/uefacom/uel/fallback.jpg");
