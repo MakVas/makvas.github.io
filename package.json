@@ -1,0 +1,26 @@
+{
+  "name": "makvas.github.io",
+  "version": "1.0.0",
+  "description": "This is a web site where you can see the results of football tounaments like UEFA Champions League, UEFA Europa League, UEFA Conference League. You are able to view the future fixtures of your favorite team, \"Top Scorers\" rating, also there is \"Matchday\" option and \"Daily Video\" topic.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MakVas/makvas.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MakVas/makvas.github.io/issues"
+  },
+  "homepage": "https://github.com/MakVas/makvas.github.io#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "sqlite3": "^5.1.7"
+  }
+}

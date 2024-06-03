@@ -1,0 +1,27 @@
+CREATE TABLE clubs(id INT PRIMARY KEY, clubName TEXT, clubLogo TEXT, country TEXT);
+
+INSERT INTO clubs VALUES (1, 'Shakhtar Donetsk', 'https://img.uefa.com/imgml/TP/teams/logos/140x140/52707.png', 'UKR');
+INSERT INTO clubs VALUES (2, 'Man City', 'https://img.uefa.com/imgml/TP/teams/logos/140x140/52919.png', 'ENG');
+INSERT INTO clubs VALUES (3, 'Bayern', 'https://img.uefa.com/imgml/TP/teams/logos/140x140/50037.png', 'GER');
+INSERT INTO clubs VALUES (4, 'Paris', 'https://img.uefa.com/imgml/TP/teams/logos/140x140/52747.png', 'FRA');
+INSERT INTO clubs VALUES (5, 'Arsenal', 'https://img.uefa.com/imgml/TP/teams/logos/140x140/52280.png', 'ENG');
+INSERT INTO clubs VALUES (6, 'Atlético Madrid', 'https://img.uefa.com/imgml/TP/teams/logos/140x140/50124.png', 'ESP');
+INSERT INTO clubs VALUES (7, 'Dortmund', 'https://img.uefa.com/imgml/TP/teams/logos/140x140/52758.png', 'GER');
+INSERT INTO clubs VALUES (8, 'Barcelona', 'https://img.uefa.com/imgml/TP/teams/logos/140x140/50080.png', 'ESP');
+INSERT INTO clubs VALUES (9, 'Liverpool', 'https://img.uefa.com/imgml/TP/teams/logos/140x140/7889.png', 'ENG');
+INSERT INTO clubs VALUES (10, 'Milan', 'https://img.uefa.com/imgml/TP/teams/logos/140x140/50058.png', 'ITA');
+INSERT INTO clubs VALUES (11, 'Roma', 'https://img.uefa.com/imgml/TP/teams/logos/140x140/50137.png', 'ITA');
+INSERT INTO clubs VALUES (12, 'Marseille', 'https://img.uefa.com/imgml/TP/teams/logos/140x140/52748.png', 'FRA');
+INSERT INTO clubs VALUES (13, 'Benfica', 'https://img.uefa.com/imgml/TP/teams/logos/140x140/50147.png', 'POR');
+INSERT INTO clubs VALUES (14, 'Leverkusen', 'https://img.uefa.com/imgml/TP/teams/logos/140x140/50109.png', 'GER');
+INSERT INTO clubs VALUES (15, 'West Ham', 'https://img.uefa.com/imgml/TP/teams/logos/140x140/53358.png', 'ENG');
+INSERT INTO clubs VALUES (16, 'Atalanta', 'https://img.uefa.com/imgml/TP/teams/logos/140x140/52816.png', 'ITA');
+INSERT INTO clubs VALUES (17, 'FC Viktoria Plzeň', 'https://img.uefa.com/imgml/TP/teams/logos/140x140/64388.png', 'CZE');
+INSERT INTO clubs VALUES (18, 'Aston Villa', 'https://img.uefa.com/imgml/TP/teams/logos/140x140/52683.png', 'ENG');
+INSERT INTO clubs VALUES (19, 'Fiorentina', 'https://img.uefa.com/imgml/TP/teams/logos/140x140/52817.png', 'ITA');
+INSERT INTO clubs VALUES (20, 'Olympiacos', 'https://img.uefa.com/imgml/TP/teams/logos/140x140/2610.png', 'GRE');
+INSERT INTO clubs VALUES (21, 'Fenerbahçe', 'https://img.uefa.com/imgml/TP/teams/logos/140x140/52692.png', 'TUR');
+INSERT INTO clubs VALUES (22, 'Lille', 'https://img.uefa.com/imgml/TP/teams/logos/140x140/75797.png', 'FRA');
+INSERT INTO clubs VALUES (23, 'Club Brugge', 'https://img.uefa.com/imgml/TP/teams/logos/140x140/50043.png', 'BEL');
+INSERT INTO clubs VALUES (24, 'PAOK', 'https://img.uefa.com/imgml/TP/teams/logos/140x140/50130.png', 'GRE');
+INSERT INTO clubs VALUES (25, 'Man United', 'https://img.uefa.com/imgml/TP/teams/logos/140x140/52682.png', 'ENG');
