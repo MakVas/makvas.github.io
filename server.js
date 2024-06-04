@@ -19,7 +19,7 @@ console.log("Connection with SQLite has been established");
 
 app.use(express.static(__dirname));
 
-app.get('/all_teams', async (req, res) => {
+app.get('/all_teams.html', async (req, res) => {
     await db.all("SELECT * FROM clubs;", [], (err, rows) => {
         if (err) {
             throw err;
