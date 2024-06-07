@@ -1,8 +1,5 @@
 let menu = document.querySelector('#menu-icon')
 let navbar = document.querySelector('.navbar')
-const lazyframe = require('lazyframe');
-
-lazyframe('.lazyframe');
 
 menu.onclick = () => {
   menu.classList.toggle('bx-x');

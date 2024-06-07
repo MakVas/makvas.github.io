@@ -25,3 +25,4 @@ INSERT INTO clubs VALUES (22, 'Lille', 'https://img.uefa.com/imgml/TP/teams/logo
 INSERT INTO clubs VALUES (23, 'Club Brugge', 'https://img.uefa.com/imgml/TP/teams/logos/140x140/50043.png', 'BEL');
 INSERT INTO clubs VALUES (24, 'PAOK', 'https://img.uefa.com/imgml/TP/teams/logos/140x140/50130.png', 'GRE');
 INSERT INTO clubs VALUES (25, 'Man United', 'https://img.uefa.com/imgml/TP/teams/logos/140x140/52682.png', 'ENG');
+INSERT INTO clubs VALUES (26, 'Man United', 'https://img.uefa.com/imgml/TP/teams/logos/140x140/52682.png', 'ENG');
